@@ -1,0 +1,5 @@
+# Put one new English word or phrase per line.
+# Format: русский - english
+# Also supported: русский: english
+# Lines starting with # are ignored and stay in this file.
+
