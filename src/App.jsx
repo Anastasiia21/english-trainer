@@ -12,7 +12,7 @@ function shuffleArray(items) {
 export default function App() {
   const [words, setWords] = useState([])
   const [index, setIndex] = useState(0)
-  const [showEnglish, setShowEnglish] = useState(false)
+  const [showEnglish, setShowEnglish] = useState(true)
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function App() {
       .then((data) => {
         setWords(shuffleArray(data))
         setIndex(0)
-        setShowEnglish(false)
+        setShowEnglish(true)
       })
       .catch((loadError) => setError(loadError.message))
   }, [])
@@ -34,12 +34,12 @@ export default function App() {
   const currentWord = words[index]
 
   function next() {
-    setShowEnglish(false)
+    setShowEnglish(true)
     setIndex((previous) => (previous + 1) % words.length)
   }
 
   function previous() {
-    setShowEnglish(false)
+    setShowEnglish(true)
     setIndex((previous) => (previous - 1 + words.length) % words.length)
   }
 
