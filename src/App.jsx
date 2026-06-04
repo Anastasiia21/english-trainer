@@ -64,7 +64,6 @@ export default function App() {
         <button className="card" type="button" onClick={() => setShowEnglish((value) => !value)}>
           <span className="label">{showEnglish ? 'English' : 'Русский'}</span>
           <span className="word">{showEnglish ? currentWord.en : currentWord.ru}</span>
-          <span className="hint">Нажми, чтобы перевернуть</span>
         </button>
 
         <div className="buttons">

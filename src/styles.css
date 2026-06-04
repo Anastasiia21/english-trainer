@@ -111,17 +111,11 @@ h1 {
 
 .word {
   color: #172b3c;
-  font-size: clamp(30px, 8vw, 52px);
+  font-size: clamp(15px, 4vw, 26px);
   font-weight: 900;
   line-height: 1.12;
   letter-spacing: -0.03em;
   white-space: pre-line;
-}
-
-.hint {
-  color: #42526b;
-  font-size: clamp(17px, 4.4vw, 22px);
-  font-weight: 500;
 }
 
 .buttons {
