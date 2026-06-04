@@ -1,19 +1,39 @@
 [
   {
     "ru": "быстро восстановиться / прийти в себя",
-    "en": "to bounce back\n\nExamples:\nHe bounced back quickly.\nThe team bounced back after the loss."
+    "en": "to bounce back\n\nExample:\nHe bounced back quickly."
   },
   {
-    "ru": "преуменьшить",
-    "en": "to downplay / to minimize\n\ndownplay — make something seem less important\nminimize — reduce or underestimate something"
+    "ru": "преуменьшить / сделать менее важным",
+    "en": "to downplay\n\nExample:\nHe tried to downplay the problem."
   },
   {
-    "ru": "осудить",
-    "en": "to judge / to condemn\n\njudge — criticize or form an opinion\ncondemn — strongly criticize"
+    "ru": "преуменьшить / минимизировать",
+    "en": "to minimize\n\nExample:\nDon’t minimize my feelings."
+  },
+  {
+    "ru": "осудить / критиковать",
+    "en": "to judge\n\nExample:\nPlease don’t judge me."
+  },
+  {
+    "ru": "резко осудить",
+    "en": "to condemn\n\nExample:\nThey condemned his behavior."
   },
   {
     "ru": "обесценивать",
-    "en": "to devalue / to undervalue / to diminish / to invalidate\n\nExamples:\nDon’t devalue me.\nDon’t diminish me.\nDon’t invalidate my feelings.\nHe constantly undervalues my efforts."
+    "en": "to devalue\n\nExample:\nDon’t devalue me."
+  },
+  {
+    "ru": "недооценивать",
+    "en": "to undervalue\n\nExample:\nHe constantly undervalues my efforts."
+  },
+  {
+    "ru": "уменьшать значимость",
+    "en": "to diminish\n\nExample:\nDon’t diminish me."
+  },
+  {
+    "ru": "обесценивать чувства / опыт",
+    "en": "to invalidate\n\nExample:\nDon’t invalidate my feelings."
   },
   {
     "ru": "притяжение — отталкивание",
@@ -24,16 +44,36 @@
     "en": "contraction — expansion"
   },
   {
-    "ru": "почти готово / почти сделали",
-    "en": "almost done / almost finished / nearly there"
+    "ru": "почти готово",
+    "en": "almost done\n\nExample:\nDinner is almost done."
   },
   {
-    "ru": "закрыть гештальт",
-    "en": "to get closure / to find closure\n\nExamples:\nI need to get closure.\nShe finally found closure."
+    "ru": "почти закончено",
+    "en": "almost finished\n\nExample:\nI’m almost finished."
   },
   {
-    "ru": "закрыть незавершённое / отпустить ситуацию",
-    "en": "to finish something unresolved / to put something behind me / to wrap things up\n\nExamples:\nI want to finish something unresolved.\nI just want to put it behind me.\nLet’s wrap things up."
+    "ru": "почти дошли / почти у цели",
+    "en": "nearly there\n\nExample:\nWe’re nearly there."
+  },
+  {
+    "ru": "закрыть гештальт / получить завершение",
+    "en": "to get closure\n\nExample:\nI need to get closure."
+  },
+  {
+    "ru": "найти завершение / отпустить",
+    "en": "to find closure\n\nExample:\nShe finally found closure."
+  },
+  {
+    "ru": "закрыть незавершённое",
+    "en": "to finish something unresolved\n\nExample:\nI want to finish something unresolved."
+  },
+  {
+    "ru": "оставить это позади / отпустить ситуацию",
+    "en": "to put something behind me\n\nExample:\nI just want to put it behind me."
+  },
+  {
+    "ru": "закончить / завершить дела",
+    "en": "to wrap things up\n\nExample:\nLet’s wrap things up."
   },
   {
     "ru": "безопасность",
@@ -41,22 +81,42 @@
   },
   {
     "ru": "быть в безопасности",
-    "en": "to be safe / to feel safe"
+    "en": "to be safe\n\nExample:\nI want to be safe."
+  },
+  {
+    "ru": "чувствовать себя в безопасности",
+    "en": "to feel safe\n\nExample:\nI feel safe here."
   },
   {
     "ru": "слишком переживать за свою безопасность",
-    "en": "to worry too much about one’s safety / to be overly concerned about one’s safety / to be too focused on staying safe"
+    "en": "to worry too much about one’s safety\n\nExample:\nShe worries too much about her safety."
+  },
+  {
+    "ru": "быть чрезмерно обеспокоенным своей безопасностью",
+    "en": "to be overly concerned about one’s safety\n\nExample:\nHe is overly concerned about his safety."
+  },
+  {
+    "ru": "слишком сильно фокусироваться на безопасности",
+    "en": "to be too focused on staying safe\n\nExample:\nI’m too focused on staying safe."
   },
   {
     "ru": "отчётливо / явно / заметно",
     "en": "distinctly\n\nExample:\nI distinctly remember closing the door."
   },
   {
-    "ru": "после того, как прошёл или перенёс что-то: операцию, лечение, обследование, стресс",
-    "en": "after undergoing\n\nMeaning:\nUse it when someone has gone through a process, usually something medical, difficult, or formal.\n\nExamples:\nAfter undergoing surgery.\nAfter undergoing examination.\nAfter undergoing treatment."
+    "ru": "после того, как прошёл или перенёс что-то",
+    "en": "after undergoing\n\nExample:\nAfter undergoing surgery."
   },
   {
-    "ru": "уменьшительно-ласкательная форма слова или имени; ласковое обращение",
-    "en": "diminutive / diminutive form / affectionate diminutive\n\nMeaning:\nA shorter or cuter form of a word or name; for affectionate names, use pet name or term of endearment.\n\nExamples:\n\"Kitty\" is a diminutive of \"cat\".\nA diminutive form of a name.\n\"Sweetie\", \"baby\", and \"honey\" are affectionate pet names."
+    "ru": "уменьшительно-ласкательное слово",
+    "en": "diminutive\n\nExample:\n\"Kitty\" is a diminutive of \"cat\"."
+  },
+  {
+    "ru": "уменьшительно-ласкательная форма",
+    "en": "diminutive form\n\nExample:\nThis is a diminutive form of a name."
+  },
+  {
+    "ru": "ласковое обращение",
+    "en": "affectionate diminutive\n\nExample:\n\"Sweetie\" is an affectionate diminutive."
   }
 ]
