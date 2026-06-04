@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function shuffleArray(items) {
   const result = [...items]
@@ -32,10 +32,6 @@ export default function App() {
   }, [])
 
   const currentWord = words[index]
-  const progress = useMemo(() => {
-    if (!words.length) return 0
-    return ((index + 1) / words.length) * 100
-  }, [index, words.length])
 
   function next() {
     setShowEnglish(false)
@@ -65,10 +61,6 @@ export default function App() {
       </header>
 
       <section className="trainer">
-        <div className="progress" aria-hidden="true">
-          <div className="progressFill" style={{ width: `${progress}%` }} />
-        </div>
-
         <button className="card" type="button" onClick={() => setShowEnglish((value) => !value)}>
           <span className="label">{showEnglish ? 'English' : 'Русский'}</span>
           <span className="word">{showEnglish ? currentWord.en : currentWord.ru}</span>
