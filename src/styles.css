@@ -114,9 +114,10 @@ h1 {
 }
 
 .word {
-  font-size: clamp(38px, 10vw, 76px);
+  font-size: clamp(24px, 6vw, 52px);
   font-weight: 900;
-  line-height: 1.05;
+  line-height: 1.18;
+  white-space: pre-line;
 }
 
 .hint {
