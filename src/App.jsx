@@ -32,35 +32,44 @@ export default function App() {
       .catch((loadError) => setError(loadError.message))
   }, [])
 
-  const currentWord = words[index]
+  const normalizedSearchQuery = searchQuery.trim().toLowerCase()
+  const filteredWords = normalizedSearchQuery
+    ? words.filter((word) => {
+        return (
+          word.en.toLowerCase().includes(normalizedSearchQuery) ||
+          word.ru.toLowerCase().includes(normalizedSearchQuery)
+        )
+      })
+    : words
+  const currentWord = filteredWords[index]
 
   function next() {
+    if (filteredWords.length === 0) {
+      return
+    }
+
     setShowEnglish(true)
-    setIndex((previous) => (previous + 1) % words.length)
+    setIndex((previous) => (previous + 1) % filteredWords.length)
   }
 
   function previous() {
+    if (filteredWords.length === 0) {
+      return
+    }
+
     setShowEnglish(true)
-    setIndex((previous) => (previous - 1 + words.length) % words.length)
+    setIndex((previous) => (previous - 1 + filteredWords.length) % filteredWords.length)
   }
 
   function searchWords(event) {
     event.preventDefault()
-    const trimmedQuery = searchQuery.trim()
-
-    if (!trimmedQuery) {
-      return
-    }
-
-    const query = encodeURIComponent(trimmedQuery)
-    window.open(`https://www.google.com/search?q=${query}`, '_blank', 'noopener,noreferrer')
   }
 
   if (error) {
     return <main className="page error">{error}</main>
   }
 
-  if (!currentWord) {
+  if (words.length === 0) {
     return <main className="page loading">Загрузка...</main>
   }
 
@@ -69,7 +78,7 @@ export default function App() {
       <header className="header">
         <h1>English Trainer</h1>
         <p className="counter">
-          {index + 1} / {words.length}
+          {currentWord ? index + 1 : 0} / {filteredWords.length}
         </p>
       </header>
 
@@ -78,23 +87,35 @@ export default function App() {
           <input
             type="search"
             value={searchQuery}
-            placeholder="Search chats..."
+            placeholder="Search words..."
             aria-label="Search words"
-            onChange={(event) => setSearchQuery(event.target.value)}
+            onChange={(event) => {
+              setSearchQuery(event.target.value)
+              setIndex(0)
+              setShowEnglish(true)
+            }}
           />
         </form>
 
-        <button className="card" type="button" onClick={() => setShowEnglish((value) => !value)}>
-          <span className="word">{showEnglish ? currentWord.en : currentWord.ru}</span>
-        </button>
-
-        <div className="buttons">
-          <button type="button" onClick={previous}>Назад</button>
-          <button type="button" className="primary" onClick={() => setShowEnglish((value) => !value)}>
-            Перевернуть
+        {currentWord ? (
+          <button className="card" type="button" onClick={() => setShowEnglish((value) => !value)}>
+            <span className="word">{showEnglish ? currentWord.en : currentWord.ru}</span>
           </button>
-          <button type="button" onClick={next}>Дальше</button>
-        </div>
+        ) : (
+          <div className="card empty-card">
+            <span className="word">No words found</span>
+          </div>
+        )}
+
+        {currentWord && (
+          <div className="buttons">
+            <button type="button" onClick={previous}>Назад</button>
+            <button type="button" className="primary" onClick={() => setShowEnglish((value) => !value)}>
+              Перевернуть
+            </button>
+            <button type="button" onClick={next}>Дальше</button>
+          </div>
+        )}
       </section>
     </main>
   )

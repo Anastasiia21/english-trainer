@@ -87,6 +87,7 @@ h1 {
 .search-form {
   align-self: center;
   width: min(100%, 260px);
+  margin-bottom: 16px;
 }
 
 .search-form input {
@@ -127,6 +128,10 @@ h1 {
   justify-content: center;
   gap: 18px;
   text-align: center;
+}
+
+.empty-card {
+  cursor: default;
 }
 
 .word {
