@@ -13,6 +13,7 @@ export default function App() {
   const [words, setWords] = useState([])
   const [index, setIndex] = useState(0)
   const [showEnglish, setShowEnglish] = useState(true)
+  const [searchQuery, setSearchQuery] = useState('')
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -43,8 +44,15 @@ export default function App() {
     setIndex((previous) => (previous - 1 + words.length) % words.length)
   }
 
-  function searchCurrentWord() {
-    const query = encodeURIComponent(currentWord.en)
+  function searchWords(event) {
+    event.preventDefault()
+    const trimmedQuery = searchQuery.trim()
+
+    if (!trimmedQuery) {
+      return
+    }
+
+    const query = encodeURIComponent(trimmedQuery)
     window.open(`https://www.google.com/search?q=${query}`, '_blank', 'noopener,noreferrer')
   }
 
@@ -66,9 +74,15 @@ export default function App() {
       </header>
 
       <section className="trainer">
-        <button className="search-button" type="button" onClick={searchCurrentWord}>
-          Search
-        </button>
+        <form className="search-form" onSubmit={searchWords}>
+          <input
+            type="search"
+            value={searchQuery}
+            placeholder="Search chats..."
+            aria-label="Search words"
+            onChange={(event) => setSearchQuery(event.target.value)}
+          />
+        </form>
 
         <button className="card" type="button" onClick={() => setShowEnglish((value) => !value)}>
           <span className="word">{showEnglish ? currentWord.en : currentWord.ru}</span>

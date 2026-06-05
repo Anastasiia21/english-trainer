@@ -20,6 +20,10 @@ button {
   font: inherit;
 }
 
+input {
+  font: inherit;
+}
+
 .page {
   min-height: 100svh;
   padding: 22px 14px;
@@ -80,8 +84,13 @@ h1 {
   transform: translateY(-1.5cm);
 }
 
-.search-button {
+.search-form {
   align-self: center;
+  width: min(100%, 260px);
+}
+
+.search-form input {
+  width: 100%;
   border: 1.5px solid #9fe4e8;
   border-radius: 999px;
   padding: 8px 22px;
@@ -90,8 +99,14 @@ h1 {
   box-shadow: 0 1px 2px rgba(15, 35, 52, 0.08);
   font-size: clamp(15px, 3.8vw, 18px);
   font-weight: 800;
-  cursor: pointer;
+  outline: none;
   white-space: nowrap;
+}
+
+.search-form input::placeholder {
+  color: #42526b;
+  font-weight: 800;
+  opacity: 1;
 }
 
 .card {
@@ -148,7 +163,7 @@ h1 {
   color: #172b3c;
 }
 
-.search-button:focus-visible,
+.search-form input:focus-visible,
 .card:focus-visible,
 .buttons button:focus-visible {
   outline: 3px solid #00afc5;
