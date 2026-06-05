@@ -62,7 +62,6 @@ export default function App() {
 
       <section className="trainer">
         <button className="card" type="button" onClick={() => setShowEnglish((value) => !value)}>
-          <span className="label">{showEnglish ? 'English' : 'Русский'}</span>
           <span className="word">{showEnglish ? currentWord.en : currentWord.ru}</span>
         </button>
 
