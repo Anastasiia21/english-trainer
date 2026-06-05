@@ -43,6 +43,11 @@ export default function App() {
     setIndex((previous) => (previous - 1 + words.length) % words.length)
   }
 
+  function searchCurrentWord() {
+    const query = encodeURIComponent(currentWord.en)
+    window.open(`https://www.google.com/search?q=${query}`, '_blank', 'noopener,noreferrer')
+  }
+
   if (error) {
     return <main className="page error">{error}</main>
   }
@@ -61,6 +66,10 @@ export default function App() {
       </header>
 
       <section className="trainer">
+        <button className="search-button" type="button" onClick={searchCurrentWord}>
+          Search
+        </button>
+
         <button className="card" type="button" onClick={() => setShowEnglish((value) => !value)}>
           <span className="word">{showEnglish ? currentWord.en : currentWord.ru}</span>
         </button>
