@@ -87,6 +87,7 @@ h1 {
 .search-form {
   align-self: center;
   width: min(100%, 260px);
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
@@ -182,6 +183,12 @@ h1 {
 
   .buttons {
     grid-template-columns: 1fr 1.2fr 1fr;
+  }
+}
+
+@media (max-width: 619px) {
+  .trainer {
+    transform: translateY(-0.8cm);
   }
 }
 
