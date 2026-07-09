@@ -366,5 +366,33 @@
   {
     "ru": "обосновать оценку актива",
     "en": "justify asset valuation"
+  },
+  {
+    "ru": "перехватчик (истребитель)",
+    "en": "interceptor"
+  },
+  {
+    "ru": "перехватывать",
+    "en": "intercept"
+  },
+  {
+    "ru": "перехваченный",
+    "en": "intercepted"
+  },
+  {
+    "ru": "неустанная концентрация на помощи людям",
+    "en": "relentless focus on helping people"
+  },
+  {
+    "ru": "неустанная концентрация на помощи людям, а не только на управлении данными",
+    "en": "relentless focus on helping people, not just managing data"
+  },
+  {
+    "ru": "слежение, наблюдение",
+    "en": "surveillance"
+  },
+  {
+    "ru": "помогать людям, а не просто управлять данными",
+    "en": "help people, not just manage data"
   }
 ]
