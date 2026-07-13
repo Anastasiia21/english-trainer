@@ -446,5 +446,13 @@
   {
     "ru": "неотступный",
     "en": "relentless"
+  },
+  {
+    "ru": "радиационное облучение",
+    "en": "radiation exposure"
+  },
+  {
+    "ru": "Для дальнейшего расследования потребовались дополнительные затраты и привлечение дополнительных ресурсов.",
+    "en": "That require additional cost and exposure to investigate further."
   }
 ]
